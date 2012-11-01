@@ -8,7 +8,7 @@
 
 #import "CLLocation+routeInfo.h"
 #import "CLLocation+measuring.h"
-
+#import "CLUtilsDefines.h"
 
 @implementation  CLLocation(routeInfo)
 

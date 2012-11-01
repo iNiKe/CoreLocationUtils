@@ -6,6 +6,8 @@
 //  Copyright (c) 2011 100 grams. All rights reserved.
 //
 
+#include <math.h> // For PI
+
 #ifndef Indoors_CLUtilsDefines_h
 #define Indoors_CLUtilsDefines_h
 
@@ -19,6 +21,8 @@
 #define Retain(obj) obj
 #endif
 
-
+#define kFarAway                                99999999 //99,999 km
+static const double kDegreesToRadians = M_PI / 180.0;
+static const double kRadiansToDegrees = 180.0 / M_PI;
 
 #endif

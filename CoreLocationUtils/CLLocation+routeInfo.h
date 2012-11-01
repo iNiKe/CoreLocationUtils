@@ -10,9 +10,6 @@
 #import <CoreLocation/CoreLocation.h>
 
 
-#define kFarAway                                9999999 //9,999 km
-
-
 // --------------------------------------------------------------------------------
 
 @interface CLLocation(routeInfo)

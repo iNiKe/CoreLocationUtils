@@ -28,10 +28,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-static const double kDegreesToRadians = M_PI / 180.0;
-static const double kRadiansToDegrees = 180.0 / M_PI;
-
-
 /*
  *  CLCoordinateRect
  *  
@@ -93,5 +89,8 @@ typedef struct {
 // returns a new location that will be reached after travelling from self location at 'speed' for 'duration' in 'direction'.
 - (CLLocation*) newLocationAfterMovingAtSpeed:(CLLocationSpeed)speed duration:(NSTimeInterval)duration direction:(CLLocationDirection)direction;
 
+
+double distVincenty(double lat1, double lon1, double lat2, double lon2, double *initialBearing, 
+                    double *finalBearing);
 
 @end
